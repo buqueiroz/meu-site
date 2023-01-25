@@ -53,6 +53,59 @@
 
     .five-content ion-icon {
         font-size: 40px;
+        
     }
 
 }
+
+
+/* responsividade */
+
+@media (max-width: 1419px) {
+   
+    /* projetos */
+
+    #three {
+        height: 100%;
+        margin: auto;
+        padding-bottom: 60px;
+    }
+
+    .card {
+        margin: 70px 20px 0px 75px;
+    }
+
+    /* xadrez */
+
+    /* for */
+
+    #for {
+        height: 650px;
+    }
+
+    #tabuleiro {
+        width: 348px;
+        height: 348px;
+    }
+
+    #tabuleiro div {
+        width: 41px; 
+        height: 41px; 
+        font-size: 25px;
+    }
+
+    /* contato */
+
+    #five {
+        height: 1000px;
+        margin: auto;
+    }
+
+    .five-content ion-icon {
+        font-size: 40px;
+        
+    }
+
+}
+
+
