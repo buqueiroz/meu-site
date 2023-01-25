@@ -2,7 +2,7 @@
 <h1 align="center"> Meu site </h1>
 
 <p align="center">
-O CzarLinks é um agregador de links para usar como cartão de visitas online. <br/>
+Site criado para falar um pouco sobre os meus prjetos. <br/>
 </p>
 
 <p align="center">
