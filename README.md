@@ -30,7 +30,7 @@ Projetos <br/>
   <img alt="CzarDev" src="./assets/site-projetos.png" width="100%">
 </p>
 <p align="center">
-Jogo de xarez<br/>
+Jogo de xadrez<br/>
 </p>
 <p align="center">
   <img alt="CzarDev" src="./assets/site-xadrez.png" width="100%">
