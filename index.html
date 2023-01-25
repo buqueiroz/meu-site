@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/stark1.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Hi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+    <body>
+        <Header>
+            <div class="logo">
+                <img src="assets/codershelly.png" alt="Logo">
+              </div>
+              <nav>
+                <ul>
+                  <li><a href="#one">Home</a></li>
+                  <li><a href="#two">About</a></li>
+                  <li><a href="#three">Projetos</a></li>
+                  <li><a href="#for">Xadrez</a></li>
+                  <li><a href="#five">Contact</a></li>
+                </ul>
+              </nav>
+        </Header>
+        <main>
+            <!-- home -->
+            <section id="one">
+                <img src="assets/js-animation.gif" alt="">
+                <h1>I am full stack developer</h1>
+                <p>clique aqui para saber mais - <a href="#two">About me.</a></p>
+            </section>
+
+            <!-- ABOUT -->
+            <section id="two">
+                <div class="two-content">
+                    <h1>About Me ...</h1>
+                    <p>Hi, meu nome e Bruno! Mas todos me chamam de <span class="cor2">codershelly</span> na twitch, sou formado em Sistemas de Informação, e estou me especializando para me tornar um desenvolvedor full stack.</p>
+                    <img src="./assets/baymax.gif" alt="" srcset="imagem baymax">
+                </div>
+            </section>
+
+            <!-- PROJETOS -->
+            <section id="three">
+                <div class="three-content">
+                    <div>
+                        <h1>Projetos</h1>
+                        <div class="card">
+                            <img src="https://raw.githubusercontent.com/buqueiroz/nlw-setup/main/assets/Home.png" alt="">
+                            <h2>Nlw Setup</h2>
+                            <p>App para usar como assistente de controle de hábitos do seu dia a adia.</p>
+                        </div>
+                        <div class="card">
+                            <img src="https://raw.githubusercontent.com/buqueiroz/CzarLinks/main/assets/CzarLinks2.jpg" alt="">
+                            <h2>Dev Links</h2>
+                            <p>O CzarLinks é um agregador de links para usar como cartão de visitas online.</p>
+                        </div>
+
+                        <div class="card">
+                            <img src="https://raw.githubusercontent.com/buqueiroz/Cronometro-Google-Chrome-Extensao/main/cron.png" alt="">
+                            <h2>Study Time</h2>
+                            <p>Study Time é uma extensão para controlar o tempo durante os estudos.</p>
+                        </div>
+
+                        <div class="card">
+                            <img src="https://raw.githubusercontent.com/buqueiroz/baymax-card-glass/main/components/Imagens/baymaxporti.png" alt="">
+                            <h2>Baymax Card Glass</h2>
+                            <p>Baymax Card Glass é um conceito moderno para aprensentar o trailer da série.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- XADREZ -->
+            <section id="for">
+                <div class="for-content">
+                    <button onclick="inicia_jogo();">Iniciar Xadrez</button>
+                    <!-- Xadrez -->
+                    
+                <div id="fundo"></div>
+                <div id="escolhecor-inicio" class="escolhe" >
+                    <div onclick="escolhecor_incio('branco');">&#9812;</div>
+                    <div onclick="escolhecor_incio('preto');">&#9818;</div>
+                </div>
+                <div id="escolhebranco" class="escolhe">
+                    <div onclick="escolhe('rainha','branco');">&#9813;</div>
+                    <div onclick="escolhe('torre','branco');">&#9814;</div>
+                    <div onclick="escolhe('cavalo','branco');">&#9816;</div>
+                    <div onclick="escolhe('bispo','branco');">&#9815;</div>
+                </div>
+                <div id="escolhepreto" class="escolhe">
+                    <div onclick="escolhe('rainha','preto');">&#9819;</div>
+                    <div onclick="escolhe('torre','preto');">&#9820;</div>
+                    <div onclick="escolhe('cavalo','preto');">&#9822;</div>
+                    <div onclick="escolhe('bispo','preto');">&#9821;</div>
+                </div>
+
+                <div id="tabuleiro">
+                <div id="t11" onclick="seleciona(1,1);"></div>	<div id="t12" onclick="seleciona(1,2);"></div>
+                <div id="t13" onclick="seleciona(1,3);"></div>	<div id="t14" onclick="seleciona(1,4);"></div>
+                <div id="t15" onclick="seleciona(1,5);"></div>	<div id="t16" onclick="seleciona(1,6);"></div>
+                <div id="t17" onclick="seleciona(1,7);"></div>	<div id="t18" onclick="seleciona(1,8);"></div>
+
+                <div id="t21" onclick="seleciona(2,1);"></div>	<div id="t22" onclick="seleciona(2,2);"></div>
+                <div id="t23" onclick="seleciona(2,3);"></div>	<div id="t24" onclick="seleciona(2,4);"></div>
+                <div id="t25" onclick="seleciona(2,5);"></div>	<div id="t26" onclick="seleciona(2,6);"></div>
+                <div id="t27" onclick="seleciona(2,7);"></div>	<div id="t28" onclick="seleciona(2,8);"></div>
+
+                <div id="t31" onclick="seleciona(3,1);"></div>	<div id="t32" onclick="seleciona(3,2);"></div>
+                <div id="t33" onclick="seleciona(3,3);"></div>	<div id="t34" onclick="seleciona(3,4);"></div>
+                <div id="t35" onclick="seleciona(3,5);"></div>	<div id="t36" onclick="seleciona(3,6);"></div>
+                <div id="t37" onclick="seleciona(3,7);"></div>	<div id="t38" onclick="seleciona(3,8);"></div>
+
+                <div id="t41" onclick="seleciona(4,1);"></div>	<div id="t42" onclick="seleciona(4,2);"></div>
+                <div id="t43" onclick="seleciona(4,3);"></div>	<div id="t44" onclick="seleciona(4,4);"></div>
+                <div id="t45" onclick="seleciona(4,5);"></div>	<div id="t46" onclick="seleciona(4,6);"></div>
+                <div id="t47" onclick="seleciona(4,7);"></div>	<div id="t48" onclick="seleciona(4,8);"></div>
+
+                <div id="t51" onclick="seleciona(5,1);"></div>	<div id="t52" onclick="seleciona(5,2);"></div>
+                <div id="t53" onclick="seleciona(5,3);"></div>	<div id="t54" onclick="seleciona(5,4);"></div>
+                <div id="t55" onclick="seleciona(5,5);"></div>	<div id="t56" onclick="seleciona(5,6);"></div>
+                <div id="t57" onclick="seleciona(5,7);"></div>	<div id="t58" onclick="seleciona(5,8);"></div>
+
+                <div id="t61" onclick="seleciona(6,1);"></div>	<div id="t62" onclick="seleciona(6,2);"></div>
+                <div id="t63" onclick="seleciona(6,3);"></div>	<div id="t64" onclick="seleciona(6,4);"></div>
+                <div id="t65" onclick="seleciona(6,5);"></div>	<div id="t66" onclick="seleciona(6,6);"></div>
+                <div id="t67" onclick="seleciona(6,7);"></div>	<div id="t68" onclick="seleciona(6,8);"></div>
+
+                <div id="t71" onclick="seleciona(7,1);"></div>	<div id="t72" onclick="seleciona(7,2);"></div>
+                <div id="t73" onclick="seleciona(7,3);"></div>	<div id="t74" onclick="seleciona(7,4);"></div>
+                <div id="t75" onclick="seleciona(7,5);"></div>	<div id="t76" onclick="seleciona(7,6);"></div>
+                <div id="t77" onclick="seleciona(7,7);"></div>	<div id="t78" onclick="seleciona(7,8);"></div>
+
+                <div id="t81" onclick="seleciona(8,1);"></div>	<div id="t82" onclick="seleciona(8,2);"></div>
+                <div id="t83" onclick="seleciona(8,3);"></div>	<div id="t84" onclick="seleciona(8,4);"></div>
+                <div id="t85" onclick="seleciona(8,5);"></div>	<div id="t86" onclick="seleciona(8,6);"></div>
+                <div id="t87" onclick="seleciona(8,7);"></div>	<div id="t88" onclick="seleciona(8,8);"></div>
+                </div>
+                <!-- <p id="info"><ion-icon name="warning-outline"></ion-icon>A inteligência artificial sera implementada em breve.</p> -->
+
+                </div>
+            </section>
+
+            <!-- CONTACT -->
+            <section id="five">
+                <div class="five-content">
+                <h1>Contact</h1>
+                    <div>
+                        <ion-icon name="logo-twitter" class="twitter"></ion-icon>
+                        <ion-icon name="logo-twitch" class="twitch"></ion-icon>
+                        <ion-icon name="logo-linkedin" class="linkedin"></ion-icon>
+                        <ion-icon name="logo-github" class="github"></ion-icon>
+                        <ion-icon name="logo-discord" class="discord"></ion-icon>
+                    </div>
+                </div>
+            </section>
+      
+        </main>
+        <footer>
+            <span class="cor1"> < </span><span class="cor2">@codershelly</span> <span class="cor3">/</span><span class="cor4">></span>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
