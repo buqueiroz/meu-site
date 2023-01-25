@@ -1,0 +1,7 @@
+/* responsividade */
+
+@media (max-width: 646px) {
+    nav {
+      display: none;
+    }
+}
