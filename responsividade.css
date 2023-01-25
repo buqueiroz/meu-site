@@ -1,5 +1,11 @@
 /* responsividade */
 
+@media (max-width: 898px) {
+    nav {
+        display: none;
+      }
+}
+
 @media (max-width: 646px) {
     /* menu */
     nav {
@@ -47,8 +53,9 @@
     /* contato */
 
     #five {
-        height: 1000px;
+        height: 100%;
         margin: auto;
+        padding-bottom: 40px;
     }
 
     .five-content ion-icon {
@@ -75,35 +82,13 @@
         margin: 70px 20px 0px 75px;
     }
 
-    /* xadrez */
-
-    /* for */
-
-    #for {
-        height: 650px;
-    }
-
-    #tabuleiro {
-        width: 348px;
-        height: 348px;
-    }
-
-    #tabuleiro div {
-        width: 41px; 
-        height: 41px; 
-        font-size: 25px;
-    }
 
     /* contato */
 
     #five {
-        height: 1000px;
+        height: 100%;
         margin: auto;
-    }
-
-    .five-content ion-icon {
-        font-size: 40px;
-        
+        padding-bottom: 150px;
     }
 
 }
