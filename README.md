@@ -24,7 +24,7 @@ Inicio. <br/>
   <img alt="CzarDev" src="./assets/site.png" width="100%">
 </p>
 <p align="center">
-Outros projetos <br/>
+Projetos <br/>
 </p>
 <p align="center">
   <img alt="CzarDev" src="./assets/site-projetos.png" width="100%">
