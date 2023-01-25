@@ -69,6 +69,11 @@ main {
     width: 300px;
 }
 
+section a {
+    text-decoration: none;
+    color: #00ffc4;
+}
+
 
 /* Section One */
 
