@@ -46,6 +46,13 @@
 
     /* contato */
 
-    
+    #five {
+        height: 1000px;
+        margin: auto;
+    }
+
+    .five-content ion-icon {
+        font-size: 40px;
+    }
 
 }
