@@ -45,7 +45,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - Git e Github
 
 ## 💻 Projeto
-O projeto foi pensado para divulgar o meu portifolio.
+O projeto foi pensado para divulgar o meu Portfólio.
 
 ## 🔖 Layout
 
