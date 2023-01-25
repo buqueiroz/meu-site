@@ -1,7 +1,51 @@
 /* responsividade */
 
 @media (max-width: 646px) {
+    /* menu */
     nav {
       display: none;
     }
+    /* section one */
+
+    #two {
+        height: 780px;
+    }
+    #two p {
+        width: 350px;
+    }
+
+    #two img {
+        width: 200px;
+    }
+
+    /* projetos */
+
+    #three {
+        height: 100%;
+        margin: auto;
+    }
+
+    /* xadrez */
+
+    /* for */
+
+    #for {
+        height: 650px;
+    }
+
+    #tabuleiro {
+        width: 348px;
+        height: 348px;
+    }
+
+    #tabuleiro div {
+        width: 41px; 
+        height: 41px; 
+        font-size: 25px;
+    }
+
+    /* contato */
+
+    
+
 }
